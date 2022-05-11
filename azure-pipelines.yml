@@ -33,7 +33,7 @@ stages:
             ScriptType: 'InlineScript'
             Inline: |
               $Parameters = @{
-                ResourcegroupName     = "ARMDeploymentTest"
+                ResourcegroupName     = "devsecops_bench-sandbox-000-rg-000-connection"
                 Templatefile          = ".\StorageAccount\azuredeploy.json"
                 TemplateParameterfile = ".\StorageAccount\azuredeploy.parameters.json"
                 Mode                  = 'Incremental'
