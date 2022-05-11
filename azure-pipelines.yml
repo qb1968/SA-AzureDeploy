@@ -15,7 +15,7 @@ stages:
         steps:
         - task: AzureResourceManagerTemplateDeployment@3
           inputs:
-            deploymentScope: 'Subscription'
+            deploymentScope: 'Resource Group'
             azureResourceManagerConnection: 'devsecops_bench-sandbox-000-rg-000-connection'
             subscriptionId: '272192c4-fcb8-4863-9cbf-a00913d42b07'
             location: 'East US'
