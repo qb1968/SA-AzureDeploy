@@ -20,11 +20,8 @@ stages:
             subscriptionId: '272192c4-fcb8-4863-9cbf-a00913d42b07'
             action: 'Create Or Update Resource Group'
             resourceGroupName: 'devsecops_bench-sandbox-000-rg-000'
-            location: 'East US 2'
+            location: 'East US'
             templateLocation: 'Linked artifact'
-            csmFile: '$(Build.SourcesDirectory)/StorageAccount/azuredeploy.json'
-            csmParametersFile: '$(Build.SourcesDirectory)/StorageAccount/azuredeploy.parameters.json'
-            overrideParameters: 'StorageAccounPrefix'
             deploymentMode: 'Validation'
         - task: PowerShell@2
           inputs:
