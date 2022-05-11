@@ -24,7 +24,7 @@ stages:
             templateLocation: 'Linked artifact'
             csmFile: '$(Build.SourcesDirectory)/StorageAccount/azuredeploy.json'
             csmParametersFile: '$(Build.SourcesDirectory)/StorageAccount/azuredeploy.parameters.json'
-            overrideParameters: 'StorageAccounPrefix “examp”'
+            overrideParameters: 'StorageAccounPrefix'
             deploymentMode: 'Validation'
         - task: PowerShell@2
           inputs:
